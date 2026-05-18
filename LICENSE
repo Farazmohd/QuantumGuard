@@ -1,21 +1,21 @@
-MIT License
+Copyright (c) 2026 Mohammed Faraz. All rights reserved.
 
-Copyright (c) 2026 Mohammed Faraz
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Proprietary Software
+This software and all associated files, documentation, designs, and code are the sole proprietary property of Mohammed Faraz ("Owner"). 
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. Limited Evaluation License
+Permission is hereby granted, free of charge, to recruiters, hiring managers, potential employers, academic evaluators, and security researchers ("Evaluators") to download, view, compile, and run this software locally for the sole, non-commercial purpose of evaluating the professional capabilities, technical skills, and coding standards of the Owner.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+3. Prohibitions & Restrictive Covenants
+Except as expressly permitted under Section 2, no person or entity may:
+(a) copy, modify, merge, publish, distribute, sublicense, sell, rent, or lease copies of the Software;
+(b) use the Software or any portion of it for any commercial, production, or external business purposes;
+(c) host or redistribute the Software on other public repositories, servers, web pages, or public mirrors.
+
+4. Intellectual Property
+All copyrights, trademarks, patent rights, trade secrets, and other intellectual property rights in and to the Software are and shall remain the exclusive property of the Owner.
+
+5. Disclaimer of Warranty
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE OWNER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

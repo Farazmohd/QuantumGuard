@@ -132,6 +132,14 @@ For testing, a system-level administrator account has been pre-configured with t
 
 ---
 
-## 🛡️ License
+## 🛡️ License & Copyright
 
-This project is licensed under the standard repository license created with the project setup.
+Copyright © 2026 Mohammed Faraz. All rights reserved.
+
+This project is **proprietary software** and all rights are strictly reserved.
+
+**Limited Recruiter & Evaluator License:**
+Permission is hereby granted, free of charge, to recruiters, hiring managers, potential employers, academic evaluators, and security researchers ("Evaluators") to download, view, compile, and run this project locally for the sole, non-commercial purpose of evaluating the professional capabilities, technical skills, and coding standards of the author.
+
+Any other use, including but not limited to reproduction, distribution, modification, commercial usage, or hosting on other public platforms, is strictly prohibited without explicit written permission from the author. For full terms, please refer to the [LICENSE](LICENSE) file.
+
