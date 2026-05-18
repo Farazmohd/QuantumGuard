@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* QuantumGuard Cyber Theme Colors */
+  --bg-deep: #050b14;
+  --bg-dark: #0a1324;
+  --bg-panel: rgba(15, 20, 28, 0.7);
+
+  --primary: #6366f1;
+  /* Indigo */
+  --secondary: #a855f7;
+  /* Purple */
+  --accent: #06b6d4;
+  /* Cyan */
+
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --neon-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+
+  /* Spacing & Shapes */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  --font-cyber: 'Orbitron', sans-serif;
+  --font-main: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-deep);
+  background-image:
+    radial-gradient(circle at center, rgba(99, 102, 241, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at center, rgba(168, 85, 247, 0.12) 0%, transparent 45%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 150% 150%, 150% 150%, 40px 40px, 40px 40px;
+  background-position: 0% 0%, 100% 100%, 0 0, 0 0;
+  color: var(--text-main);
+  font-family: var(--font-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  animation: cyberBgMotion 20s infinite alternate ease-in-out;
+}
+
+@keyframes cyberBgMotion {
+  0% {
+    background-position: 10% 10%, 90% 90%, 0 0, 0 0;
+  }
+  50% {
+    background-position: 50% 80%, 80% 20%, 20px 20px, 20px 20px;
+  }
+  100% {
+    background-position: 90% 10%, 10% 90%, 40px 40px, 40px 40px;
+  }
+}
+
+/* Layout Containers */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Typography Extensions */
+h1,
+h2,
+h3,
+.cyber-text {
+  font-family: var(--font-cyber);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Glassmorphism Components */
+.glass-card {
+  background: var(--bg-panel);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+/* Cyber Buttons */
+.cyber-btn {
+  font-family: var(--font-cyber);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cyber-btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  box-shadow: var(--neon-shadow);
+}
+
+.cyber-btn-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.4);
+}
+
+.cyber-btn-outline {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.cyber-btn-outline:hover {
+  background: rgba(99, 102, 241, 0.1);
+  color: white;
+  border-color: white;
+}
+
+/* Forms & Inputs */
+.cyber-input {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(15, 20, 28, 0.8);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.cyber-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
+  background: rgba(15, 20, 28, 0.95);
+}
+
+.cyber-input::placeholder {
+  color: var(--text-dim);
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1000;
+  background: rgba(5, 7, 10, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.nav-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  font-family: var(--font-cyber);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+/* Animations */
+@keyframes pulse-cyan {
+  0% {
+    box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(6, 182, 212, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(6, 182, 212, 0);
+  }
+}
+
+.pulse {
+  animation: pulse-cyan 2s infinite;
+}
+
+/* Dashboard Grid Layouts */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+  background: var(--bg-deep);
+}
+
+.sidebar {
+  background: var(--bg-dark);
+  border-right: 1px solid var(--glass-border);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Custom Scrollbar for Cyber Feel */
+@keyframes hoverPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4);
+  }
+
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+  }
+
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+  }
+}
+
+.hover-pulse:hover {
+  animation: hoverPulse 0.6s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: var(--accent) !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* ─── LIGHT THEME OVERRIDES ─── */
+[data-theme='light'] {
+  --bg-deep: #f8fafc;
+  --bg-dark: #f1f5f9;
+  --bg-panel: rgba(255, 255, 255, 0.85);
+
+  --primary: #4f46e5;
+  --secondary: #9333ea;
+  --accent: #0284c7;
+
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #64748b;
+
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --neon-shadow: 0 4px 20px rgba(79, 70, 229, 0.2);
+}
+
+/* ─── THEME TOGGLE BUTTON ─── */
+.theme-toggle-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--bg-panel);
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.15) rotate(-15deg);
+  border-color: var(--primary);
+  box-shadow: var(--neon-shadow);
+}
